@@ -1,0 +1,7 @@
+h1 MAIN DASHBOARD
+
+p
+  - if current_user
+    = current_user.username
+  - else
+    span No user

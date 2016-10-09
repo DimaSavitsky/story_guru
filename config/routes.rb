@@ -6,5 +6,7 @@ Rails.application.routes.draw do
 
   resource :dashboard
 
+  resources :books, except: [:destroy]
+
   root to: 'dashboards#show'
 end

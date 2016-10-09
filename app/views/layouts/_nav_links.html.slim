@@ -1,4 +1,3 @@
 - if current_user
-  li
-    a[href='#']
-      | Sass
+  li class=('active' if current_page?(controller: :books))
+    = link_to 'Books', books_path

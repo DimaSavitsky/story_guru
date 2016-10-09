@@ -1,0 +1,14 @@
+= form_for @book do |builder|
+  - if @book.errors.present?
+    .row
+      .col.s12.red-text.center-align
+        = @book.errors.full_messages
+
+  .row
+    .input-field.col.s6
+      label[for='book_title'] Title
+      = builder.text_field :title
+
+  .row
+    .col.s6
+      = builder.submit 'Submit', class: 'btn'

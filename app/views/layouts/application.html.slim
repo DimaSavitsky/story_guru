@@ -11,5 +11,8 @@ html
   body
     = render partial: 'layouts/header'
 
-    .viewport
-      = yield
+    .row
+      .col.m1
+      .col.m10.s12.viewport
+        = yield
+      .col.m1

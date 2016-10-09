@@ -1,0 +1,12 @@
+.row
+
+  - @books.each do |book|
+    .col.s12.m4
+      = link_to book_path(book) do
+        .card-panel
+          span= book.title
+
+  .col.s12.m4
+    = link_to new_book_path do
+      .card-panel.teal
+        span.white-text Add New
